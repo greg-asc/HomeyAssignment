@@ -1,24 +1,9 @@
-# README
+# Homey Coding Assignment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my implementation of the coding assignment for Homey.
 
-Things you may want to cover:
+## Heroku
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app is hosted on Heroku. To access it, please navigate to
+[this page](https://homey-assignment-591c09908289.herokuapp.com/projects/1/conversation_events)
+and log in with these credentials: `user1@homey.co.uk SecretPassword1234!`
