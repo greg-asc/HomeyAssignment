@@ -1,0 +1,22 @@
+<div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl p-6 mb-8 text-white shadow-md">
+  <div class="flex items-center justify-between mb-2">
+    <h1 class="text-3xl font-bold">
+      <%= title %>
+    </h1>
+    <span class="text-sm uppercase tracking-wide px-3 py-1 rounded-full bg-white text-indigo-800 font-semibold shadow-sm">
+      <%= status.humanize %>
+    </span>
+  </div>
+
+  <div class="text-sm opacity-80 flex flex-wrap gap-x-6">
+    <span>
+      <strong>Owner:</strong> <%= owner %>
+    </span>
+    <span>
+      <strong>Last updated:</strong> <%= time_ago_in_words(updated_at) %> ago
+    </span>
+    <span>
+      <strong>Created:</strong> <%= created_at.strftime("%b %d, %Y") %>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,2 @@
+class HerokuTestMailer < ApplicationMailer
+end

@@ -1,0 +1,13 @@
+<div class="rounded-lg border p-4 mb-3 bg-white shadow-sm">
+  <div class="flex justify-between items-center mb-2">
+    <div class="flex items-center space-x-2">
+      <i class="fa-solid fa-circle-user"></i>
+      <span class="font-medium text-gray-800"><%= user_name %></span>
+      <span class="text-sm text-gray-500"><%= time_ago_in_words(created_at) %> ago</span>
+    </div>
+  </div>
+  <div class="prose max-w-none text-gray-800">
+    <%= raw markdown.render(body) %>
+  </div>
+  <%# TODO: render ReactionBarComponent.new(event: event, current_user: current_user) %>
+</div>

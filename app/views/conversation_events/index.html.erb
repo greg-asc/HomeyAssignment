@@ -1,0 +1,13 @@
+<%= turbo_frame_tag "project_header_#{@project.id}" do %>
+  <h1><%= render ProjectHeaderComponent.new(@project) %></h1>
+<% end %>
+
+<%= turbo_frame_tag "new_event_#{@project.id}" do %>
+  <%= render ConversationEventFormComponent.new(project: @project, user: current_user, form: @form) %>
+<% end %>
+
+<%= turbo_frame_tag "conversation_events_#{@project.id}" do %>
+  <% @events.each do |e| %>
+    <%= render ConversationEventPresenter.new(e).component %>
+  <% end %>
+<% end %>
